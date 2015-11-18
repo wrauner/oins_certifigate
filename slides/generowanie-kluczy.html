@@ -1,0 +1,12 @@
+<pre>
+<code class="sh">
+      openssl genrsa -out server.key 2048
+      openssl req -new -key server.key -out server.csr -set_serial 123456789
+      openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt
+
+</code>
+</pre>
+
+<p class="fragment">
+  ... a wartość numeru seryjnego, która jest akceptowana można znaleźć dekompilując plugin
+</p>

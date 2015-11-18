@@ -1,0 +1,26 @@
+<h2>Architektura mRST</h2>
+
+<div style="display: flex;justify-content: center;">
+  <ul style="margin-top: 40px;">
+    <li>Aplikacja</li>
+    <ul>
+      <li>Podpisana przez developera</li>
+      <li>"Zwykłe" uprawnienia</li>
+      <li>Połaczenie z Internetem</li>
+      <li>Interfjes użytkownika</li>
+    </ul>
+  </ul>
+
+  <ul style="margin-top: 40px;">
+    <li>Plugin</li>
+    <ul>
+      <li>Podpisana przez OEM</li>
+      <li>Podniesione uprawnienia</li>
+      <li>Udostępnia serwis</li>
+      <li>Bez interfejsu dla użytkownika</li>
+    </ul>
+  </ul>
+</div>
+
+<p class="fragment" style="margin-top: 40px;">Komunikacja za pomocą <a href="http://developer.android.com/reference/android/os/Binder.html">Binder</a></p>
+<p class="fragment">Bezpieczeństwo? Weryfikacja aplikacji przez plugin</p>
